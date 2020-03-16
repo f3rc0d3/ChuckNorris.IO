@@ -15,7 +15,6 @@
         app:strokeWidth="0.1dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true">
 
@@ -48,7 +47,7 @@
                 android:padding="5dp"
                 android:textSize="12sp"
                 tools:text="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-                android:text="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." />
+                android:text="@string/default_desc" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </com.google.android.material.card.MaterialCardView>

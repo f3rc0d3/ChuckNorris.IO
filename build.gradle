@@ -1,14 +1,106 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.3.61'
+    ext.kotlin_version = '1.3.70'
+
+    ext.versions = [
+        'minAndroidSdk'         : 22,
+        'compileAndroidSdk'     : 29,
+        'buildTools'            : '29.0.3',
+        'gradle'                : '3.6.1',
+        'kotlin'                : '1.3.70',
+
+        'appCompat'             : '1.1.0',
+        'coreKtx'               : '1.2.0',
+        'constraintLayout'      : '1.1.3',
+        'core'                  : '1.0.2',
+        'dagger'                : '2.24',
+        'navigation'            : '2.2.1',
+        'retrofit'              : '2.7.2',
+        'viewmodelKtx'          : '2.2.0',
+        'lifecycleKtx'          : '2.2.0',
+        'glide'                 : '4.11.0',
+        'rxAndroid'             : '2.0.1',
+        'moshi'                 : '1.9.2',
+        'legacySupport'         : '1.0.0',
+
+        'junit'                 : '4.12',
+        'junitAndroidX'         : '1.1.1',
+        'truthKtx'              : '1.2.0',
+        'truth'                 : '1.0',
+        'extJunit'              : '1.1.1',
+        'espresso'              : '3.2.0',
+        'extMockk'              : '1.9.3',
+        'archCoreTesting'       : '2.1.0',
+
+        'sourceCompat'          : JavaVersion.VERSION_1_8,
+        'targetCompat'          : JavaVersion.VERSION_1_8
+    ]
+
+    ext.deps = [
+            kotlin: [
+                    'stdlib'           : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}",
+            ],
+
+            android   : [
+                    'core'              : "androidx.core:core:${versions.core}",
+                    'coreKtx'           : "androidx.core:core-ktx:${versions.coreKtx}",
+                    'appCompat'         : "androidx.appcompat:appcompat:${versions.appCompat}",
+                    'legacySupport'     : "androidx.legacy:legacy-support-v4:${versions.legacySupport}",
+                    'constraintLayout'   : "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}",
+
+                    'fragmentKtx'       : "androidx.fragment:fragment-ktx:${versions.fragmentKtx}",
+
+                    'lifecycleKtx'      : "androidx.lifecycle:lifecycle-extensions:${versions.lifecycleKtx}",
+                    'viewmodelKtx'      : "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.viewmodelKtx}",
+
+                    'navigationFragment': "androidx.navigation:navigation-fragment-ktx:${versions.navigation}",
+                    'navigationUi'      : "androidx.navigation:navigation-ui-ktx:${versions.navigation}",
+            ],
+            bumptech   : [
+                    'glide'            : "com.github.bumptech.glide:glide:${versions.glide}",
+                    'glideCompiler'    : "com.github.bumptech.glide:compiler:${versions.glide}"
+            ],
+
+            reactivex  : [
+                    'rxAndroid'        : "io.reactivex.rxjava2:rxandroid:${versions.rxAndroid}",
+                    'rxJava'           : "io.reactivex.rxjava2:rxjava:${versions.rxAndroid}"
+            ],
+
+            squareup  : [
+                    'moshi'            : "com.squareup.moshi:moshi-kotlin:${versions.moshi}",
+                    'moshiCodeGen'     : "com.squareup.moshi:moshi-kotlin-codegen:${versions.moshi}",
+                    'retrofitMoshi'    : "com.squareup.retrofit2:converter-moshi:${versions.retrofit}",
+                    'retrofit'         : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+                    'rxJavaAdapter'    : "com.squareup.retrofit2:adapter-rxjava2:${versions.retrofit}"
+            ],
+
+            google: [
+                    'dagger'             : "com.google.dagger:dagger:${versions.dagger}",
+                    'daggerCompiler'     : "com.google.dagger:dagger-compiler:${versions.dagger}",
+                    'daggerAndroid'      : "com.google.dagger:dagger-android-support:${versions.dagger}",
+                    'daggerProcessor'    : "com.google.dagger:dagger-android-processor:${versions.dagger}"
+            ],
+
+            test: [
+                    'junitAndroidX'      : "androidx.test.ext:junit:${versions.junitAndroidX}",
+                    'junit'              : "junit:junit:${versions.junit}",
+                    'espresso'           : "androidx.test.espresso:espresso-core:${versions.espresso}",
+                    'mockk'              : "io.mockk:mockk:${versions.extMockk}",
+                    'truthKtx'           : "androidx.test.ext:truth:${versions.truthKtx}",
+                    'truth'              : "com.google.truth:truth:${versions.truth}",
+                    'archCore'           : "androidx.arch.core:core-testing:${versions.archCoreTesting}"
+            ]
+
+    ]
+
     repositories {
         google()
         jcenter()
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath "com.android.tools.build:gradle:${versions.gradle}"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0"
 

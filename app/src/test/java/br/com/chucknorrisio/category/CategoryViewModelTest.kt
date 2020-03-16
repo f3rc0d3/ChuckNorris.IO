@@ -33,7 +33,7 @@ class CategoryViewModelTest {
     @Before
     fun setUp() {
         MockKAnnotations.init(this)
-        viewModel = ChuckCategoryViewModel(categoryRemoteDataSource)
+//        viewModel = ChuckCategoryViewModel(categoryRemoteDataSource)
     }
 
     @Test

@@ -17,7 +17,7 @@ class ApplicationModule {
     @Singleton
     @Provides
     fun provideRetrofit(): Retrofit =
-        Retrofit.Builder().baseUrl("https://api.chucknorris.io/")
+        Retrofit.Builder().baseUrl(BASE_URL)
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(MoshiConverterFactory.create())
             .build()
@@ -35,4 +35,8 @@ class ApplicationModule {
     @Singleton
     @Provides
     fun provideCompositeDisposable(): CompositeDisposable = CompositeDisposable()
+
+    companion object {
+        const val BASE_URL = "https://api.chucknorris.io/"
+    }
 }

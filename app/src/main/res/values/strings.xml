@@ -21,6 +21,8 @@
     <string name="chuck_travel_phrase">Se Chuck Norris se atrasar, é melhor o tempo andar mais devagar.</string>
     <string name="chuck_default_phrase">Chuck Norris perdeu a virgindade antes do pai.</string>
     <string name="title_category">Escolha uma categoria Norris!</string>
+    <string name="default_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</string>
+    <string name="detail_label">Hello</string>
 
 
 </resources>
