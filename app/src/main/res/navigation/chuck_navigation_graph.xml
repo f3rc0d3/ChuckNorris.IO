@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_navigation_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="br.com.chucknorrisio.splash.SplashFragment"
+        android:label="splash_fragment"
+        tools:layout="@layout/splash_fragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_chuckCategoryFragment"
+            app:destination="@id/chuckCategoryFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/chuckCategoryFragment"
+        android:name="br.com.chucknorrisio.category.ChuckCategoryFragment"
+        android:label="chuck_category_fragment"
+        tools:layout="@layout/chuck_category_fragment" >
+        <action
+            android:id="@+id/action_chuckCategoryFragment_to_chuckDetailFragment"
+            app:destination="@id/chuckDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chuckDetailFragment"
+        android:name="br.com.chucknorrisio.detail.ChuckDetailFragment"
+        android:label="chuck_detail_fragment"
+        tools:layout="@layout/chuck_detail_fragment" />
+</navigation>

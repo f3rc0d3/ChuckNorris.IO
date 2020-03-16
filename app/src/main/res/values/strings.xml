@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ChuckNorris.IO</string>
+    <string name="chucknorris_io">ChuckNorris.IO</string>
+
+    <string name="chuck_animal_phrase">Uma vez um urso atravessou o caminho de Chuck Norris. O trauma foi tão grande que o animal fugiu para o Ártico e ficou cheio de cabelos brancos. Surgiu então o urso-polar.</string>
+    <string name="chuck_career_phrase">A última página do Guiness (livro dos recordes) diz em letras miúdas:
+ Todos os recordes do mundo pertencem a Chuck Norris. Nós apenas nos damos o trabalho de listar os segundos colocados em cada categoria.</string>
+    <string name="chuck_celebrity_phrase">Chuck Norris uma vez tomou um vidro inteiro de pílulas para dormir. Elas fizeram ele piscar.</string>
+    <string name="chuck_dev_phrase">Chuck Norris não usa relógio. Ele decide que horas são.</string>
+    <string name="chuck_explicit_phrase">Deus precisava de 10 dias para construir o mundo. Chuck Norris deu a ele 6 e olhe lá.</string>
+    <string name="chuck_fashion_phrase">Algumas pessoas usam uniforme do Superman. Já o Superman usa uniforme de Chuck Norris.</string>
+    <string name="chuck_food_phrase">Quando Chuck Norris quer comer um ovo, ele quebra a galinha.</string>
+    <string name="chuck_history_phrase">Chuck Norris nunca vai morrer de ataque cardíaco. Seu coração não é tolo o bastante para atacá-lo.</string>
+    <string name="chuck_money_phrase">Uma imagem vale mais que mil palavras. Chuck Norris vale mais que um milhão de imagens.</string>
+    <string name="chuck_movie_phrase">Chuck Norris pediu um Big Mac no Bob´s. Ele foi atendido.</string>
+    <string name="chuck_music_phrase">As lágrimas do Chuck Norris curam o câncer.</string>
+    <string name="chuck_political_phrase">Chuck Norris não dorme. Ele espera.</string>
+    <string name="chuck_religion_phrase">Chuk Norris não tem casa. Ele escolhe uma casa e seus moradores se mudam.</string>
+    <string name="chuck_science_phrase">O Triângulo das Bermundas era um quadrado até Chuck Norris dar um roundhouse kick em um dos cantos.</string>
+    <string name="chuck_sport_phrase">Chuck Norris inventou o preto.</string>
+    <string name="chuck_travel_phrase">Se Chuck Norris se atrasar, é melhor o tempo andar mais devagar.</string>
+    <string name="chuck_default_phrase">Chuck Norris perdeu a virgindade antes do pai.</string>
+    <string name="title_category">Escolha uma categoria Norris!</string>
+
+
+</resources>

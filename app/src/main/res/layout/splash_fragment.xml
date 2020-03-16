@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash.SplashFragment"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_chuck"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        tools:src="@drawable/shadow_chuck" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_chuck_norris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/zero_four_b"
+        tools:text="ChuckNorris.IO"
+        android:textSize="20sp"
+        android:text="@string/chucknorris_io"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
